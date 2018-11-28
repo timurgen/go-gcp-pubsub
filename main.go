@@ -22,7 +22,6 @@ func main() {
 
 	if os.Getenv("GOOGLE_APPLICATION_CREDENTIALS") == "" {
 		os.Setenv("GOOGLE_APPLICATION_CREDENTIALS", "./credentials.json")
-		os.Setenv("GCP_PROJECT_ID", "sesam-221611")
 	}
 
 	ctx := context.Background()
