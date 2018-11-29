@@ -1,9 +1,11 @@
 FROM iron/base
 
-WORKDIR /app
+COPY pubsubservice /opt/service/
 
-ARG binaryname
-ENV runnable=$binaryname
-COPY $binaryname /app/
+WORKDIR /opt/service
 
-ENTRYPOINT ./$runnable
+RUN chmod +x /opt/service/pubsubservice
+
+EXPOSE 8000:8000
+
+CMD /opt/service/pubsubservice
