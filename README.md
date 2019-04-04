@@ -1,5 +1,7 @@
 # go-gcp-pubsub
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/timurgen/go-gcp-pubsub)](https://goreportcard.com/report/github.com/timurgen/go-gcp-pubsub)
+
 Simple GCP pubsub sink for Sesam.io powered applications
 
 env vars to configure service
